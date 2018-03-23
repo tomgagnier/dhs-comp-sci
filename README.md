@@ -15,6 +15,10 @@ All examples appear under the `src/main/java` directory.
     └── src
         ├── main
         │   └── java
+        │       └── term1
+        │       └── term2
         └── test
-            └── java
+            └── java
+                └── term1
+                └── term2
 
