@@ -31,20 +31,14 @@ import static util.Utilities.newTestScanner;
  * [cup, spoon, fork, bowl, plate, knife]
  * [spoon, fork, bowl, plate]
  */
-public class Lesson1 {
+public class Main {
     public static void main(String[] args) {
-//        Scanner scanner =newTestScanner("cup\nspoon\nfork\nbowl\nplate\nknife\nSTOP\n");
-//        Scanner scanner =newTestScanner("cup\nspoon\nfork\nSTOP\n");
-        Scanner scanner =newTestScanner("cup\nspoon\nSTOP\n");
-        List<String> words = new ArrayList<>();
-        System.out.println("Please enter words, enter STOP to stop the loop.");
-        while (true) {
-            String word = scanner.nextLine();
-            if ("STOP".equals(word)) {
-                break;
-            }
-            words.add(word);
-        }
+        //        Scanner scanner =newTestScanner("cup\nspoon\nfork\nbowl\nplate\nknife\nSTOP\n");
+        //        Scanner scanner =newTestScanner("cup\nspoon\nfork\nSTOP\n");
+        Scanner scanner = newTestScanner("cup\nspoon\nSTOP\n");
+
+        List<String> words = collectWordsUntilStopEntered(scanner);
+
         System.out.println(words.size());
         System.out.println(words);
         if (words.size() > 2) {
@@ -52,5 +46,17 @@ public class Lesson1 {
             words.remove(0);
         }
         System.out.println(words);
+    }
+
+    private static List<String> collectWordsUntilStopEntered(Scanner scanner) {
+        List<String> words = new ArrayList<>();
+        System.out.println("Please enter words, enter STOP to stop the loop.");
+        while (true) {
+            String word = scanner.nextLine();
+            if ("STOP".equals(word)) {
+                return words;
+            }
+            words.add(word);
+        }
     }
 }
