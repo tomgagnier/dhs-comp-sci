@@ -78,7 +78,7 @@ package term1.assignments;
  * Better luck next time!
  *
  *
- * NOTE: You MUST use the class name "Main" for this assignment. REMEMBER: you
+ * NOTE: You MUST use the class name "Vehicle" for this assignment. REMEMBER: you
  * must SUBMIT your answer. Your assignment doesn't count as complete unless it
  * has been submitted.
  */

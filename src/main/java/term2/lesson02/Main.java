@@ -1,4 +1,4 @@
-package term2.lesson2;
+package term2.lesson02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import static util.Utilities.newTestScanner;
  * zebra
  * cat
  *
- * Note: For this activity, you must use the class name, Main and the method, main.
+ * Note: For this activity, you must use the class name, Vehicle and the method, main.
  */
 public class Main {
     public static void main(String... args) {
