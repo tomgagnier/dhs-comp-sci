@@ -16,7 +16,7 @@ public class UltimateTeam {
     }
 
     public String getHandlers() {
-        return getPlayerTypes("handlers");
+        return getPlayerTypes("handler");
     }
 
     private String getPlayerTypes(String type) {
